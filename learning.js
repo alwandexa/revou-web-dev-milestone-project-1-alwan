@@ -15,4 +15,22 @@ const collapsible = () => {
   }
 };
 
+const sidebarSearch = () => {
+  const keyword = document.getElementById("search-input").value.toLowerCase();
+
+  const headers = document.querySelectorAll(".content ul li a");
+
+  const matchingHeaders = Array.from(headers).filter((header) => {
+    return header.innerHTML.toLowerCase().includes(keyword);
+  });
+
+  matchingHeaders.forEach((header) => {
+    console.log(header.innerHTML)
+  });
+};
+
+document
+  .getElementById("search-input")
+  .addEventListener("change", sidebarSearch);
+
 collapsible();
