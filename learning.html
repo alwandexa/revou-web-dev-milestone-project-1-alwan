@@ -10,9 +10,9 @@
     <button class="menu-button" onclick="sidebar()">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="1.5em"
-        height="1.5em"
-        fill="black"
+        width="2.5em"
+        height="2.5em"
+        fill="white"
         viewBox="0 0 16 16"
       >
         <path
@@ -21,15 +21,20 @@
         />
       </svg>
     </button>
-    <aside>
-      <h1>The Complete 2024 Web Development</h1>
-      <input
-        type="search"
-        name="search-input"
-        id="search-input"
-        placeholder="Search"
-      />
-      <section>
+    <aside style="display: block;">
+      <section class="sidebar-head">
+        <div class="back-wrapper">
+          <a href="index.html">Back to homepage..</a>
+        </div>
+        <h1>The Complete 2024 Web Development</h1>
+        <input
+          type="search"
+          name="search-input"
+          id="search-input"
+          placeholder="Search"
+        />
+      </section>
+      <section class="sidebar-body">
         <h2 class="collapsible active">1. Welcome and Training Introduction</h2>
         <section class="content">
           <ul>
@@ -55,7 +60,7 @@
           <ul>
             <li>
               <a href="https://en.wikipedia.org/wiki/HTML" target="main-iframe"
-                >Setting Up a Development Environment</a
+                >Setting Development Environment</a
               >
             </li>
             <li>
@@ -85,7 +90,7 @@
             </li>
             <li>
               <a href="https://en.wikipedia.org/wiki/HTML" target="main-iframe"
-                >Handout : HgTML and CSS Mastery</a
+                >Handout : HTML and CSS Mastery</a
               >
             </li>
             <li>
