@@ -33,15 +33,15 @@ const sidebar = () => {
 
   console.log(sidebar);
 
-  if (sidebar.style.display == "block") {
-    sidebar.style.display = "none";
-  } else {
+  if (sidebar.style.display == "none") {
     sidebar.style.display = "block";
+  } else {
+    sidebar.style.display = "none";
   }
 };
 
 document
   .getElementById("search-input")
-  .addEventListener("change", sidebarSearch);
+  .addEventListener("search", sidebarSearch);
 
 collapsible();
