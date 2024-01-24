@@ -1,0 +1,289 @@
+html {
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  margin: 0;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em;
+  height: 3.5em;
+  background-color: #a82b23;
+}
+
+header img,
+footer img {
+  width: 15em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #a82b23;
+  padding: 1em;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding-right: 1em;
+}
+
+h1 {
+  font-family: serif;
+  font-size: 2.5em;
+  color: #a82b23;
+}
+
+input {
+  flex-grow: 1;
+  margin: 2em;
+  border-radius: 2em;
+  border: none;
+  padding: 1em;
+}
+
+.header-button-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlight {
+  background-color: #f4f4f4;
+}
+
+.highlight-card {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.companies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+  background-color: #f4f4f4;
+}
+
+.company-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.company-list {
+  margin: 0.5em;
+  list-style: none;
+}
+
+.courses {
+  width: 80%;
+  margin: auto;
+}
+
+.testimony {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  background-color: #f4f4f4;
+}
+
+.testimony div {
+  width: 80%;
+  margin: auto;
+}
+
+.testimony-card {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: white;
+  border: 1px;
+  border-color: #f4f4f4;
+  border-style: solid;
+}
+
+.testimony-card img {
+  width: 2em;
+}
+
+.popular {
+  width: 80%;
+  margin: auto;
+}
+
+.popular section {
+  display: flex;
+}
+
+.accordion {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.course-card {
+  color: black;
+  text-decoration: none;
+  margin: 0.5em;
+  padding: 1em;
+  max-width: min-content;
+}
+
+.course-card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.top-categories {
+  width: 80%;
+  margin: auto;
+}
+
+.top-categories section {
+  display: flex;
+}
+
+.category-card {
+  padding: 1em;
+}
+
+.category-card img:hover {
+  transform: scale(1.05);
+}
+
+.instructor {
+  width: 80%;
+  margin: auto;
+  padding: 3em;
+}
+
+.instructor article {
+  display: flex;
+  flex-direction: row;
+}
+
+.instructor section {
+  padding: 2em;
+}
+
+/* Button */
+.button {
+  margin-right: 0.5em;
+  padding: 1em;
+  border: 0;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.black-button {
+  background-color: black;
+  color: white;
+}
+
+.white-button {
+  background-color: white;
+  color: black;
+}
+
+.cart {
+  color: white;
+  background: none;
+  border: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.25em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media only screen and (max-width: 1000px) {
+  header img {
+    width: 10em;
+  }
+
+  footer img {
+    width: 10em;
+  }
+
+  input {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .highlight {
+    background-color: white;
+  }
+
+  .highlight-card {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  .instructor article {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .highlight {
+    background-color: white;
+  }
+
+  .highlight-card {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+
+  .instructor article {
+    flex-direction: column;
+  }
+}
