@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>DexaDemy</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="login-card">
+          <img
+            src="https://www.dexagroup.com/wp-content/uploads/2021/12/header-logo-dexagroup-256x50.png"
+            alt=""
+          />
+          <h1>Sign In</h1>
+          <p>New to DexaDemy? <a href="">Create a new account</a></p>
+          <form action="index.html">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="input"
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+              class="input"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+              required
+            />
+            <p>
+              <input type="checkbox" name="" id="" />Keep me signed in on this
+              device ?
+            </p>
+            <button type="submit" class="button login-button">Log In</button>
+          </form>
+          <p>Need to find <a href="">your password?</a></p>
+        </div>
+      </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>
