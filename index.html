@@ -3,182 +3,256 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
     <title>DexaDemy</title>
   </head>
-  <header>
-    <h1>DexaDemy</h1>
-    <input type="search" placeholder="Search for anything" />
-    <button>Cart</button>
-    <button>Log In</button>
-    <button>Sign up</button>
-    <button>Lang</button>
-  </header>
   <body>
-    <section>
-      <img
-        width="100%"
-        height="auto"
-        alt=""
-        src="https://img-b.udemycdn.com/notices/web_carousel_slide/image/06bffb17-9483-429e-9145-25f046f65ad1.png"
-        loading="eager"
-      />
-    </section>
-    <section>
-      <p>
-        Trusted by over 100 companies and thousands of learners around the globe
-      </p>
-    </section>
-    <section>
-      <h2>A broad selection of courses</h2>
-      <p>
-        Choose from over 10000 online video courses with new addtions published
-        every month
-      </p>
-      <section>
+    <header>
+      <a href="/">
+        <img src="assets/logo-white.png" alt="Company Logo" />
+      </a>
+      <input type="search" placeholder="Search for anything" />
+      <div class="header-button-holder">
+        <button class="button cart" aria-label="Cart Button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            fill="currentColor"
+            class="bi bi-cart2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"
+            />
+          </svg>
+        </button>
+        <a href="login.html"
+          ><button class="button white-button">Log In</button></a
+        >
+        <button class="button black-button">Sign up</button>
+      </div>
+    </header>
+    <main>
+      <section class="highlight">
+        <img
+          width="100%"
+          height="auto"
+          alt=""
+          src="assets/landing-image.png"
+          loading="eager"
+        />
+      </section>
+      <section class="companies">
+        <p>
+          Trusted by over 100 companies and thousands of learners around the
+          globe
+        </p>
+      </section>
+      <section class="courses">
+        <h1>A broad selection of courses</h1>
+        <p>
+          Choose from over 10000 online video courses with new addtions
+          published every month
+        </p>
+        <section>
+          <article>
+            <h2>Python</h2>
+            <p>
+              Take one of DexaDemy's range of Python courses and learn how to
+              code using this incredibly useful language. Its simple syntax and
+              readability makes Python perfect for Flask, Django, data science,
+              and machine learning. You'll learn how to build everything from
+              games to sites to apps. Choose from a range of courses that will
+              appeal to both beginners and advanced developers alike.
+            </p>
+          </article>
+          <article>
+            <h2>Javascript</h2>
+            <p>
+              JavaScript is a text-based computer programming language used to
+              make dynamic web pages. A must-learn for aspiring web developers
+              or programmers, JavaScript can be used for features like image
+              carousels, displaying countdowns and timers, and playing media on
+              a webpage. With JavaScript online classes, you can learn to build
+              interactive web applications, choose the best framework, and work
+              with other programming languages like HTML and CSS.
+            </p>
+          </article>
+          <article>
+            <h2>Data Science</h2>
+            <p>
+              Data science application is an in-demand skill in many industries
+              worldwide — including finance, transportation, education,
+              manufacturing, human resources, and banking. Explore data science
+              courses with Python, statistics, machine learning, and more to
+              grow your knowledge. Get data science training if you're into
+              research, statistics, and analytics.
+            </p>
+          </article>
+        </section>
+      </section>
+      <section class="testimony">
         <div>
-          <button>Python</button>
-          <button>Javascript</button>
-          <button>Data Science</button>
+          <h1>How learners like you are achieving their goals</h1>
+          <article class="testimony-card">
+            <img
+              src="https://s.udemycdn.com/browse_components/student-quote-unit/quote.svg"
+              alt=""
+            />
+            <p>
+              I am proud to say that after a few months of taking this course...
+              I passed my exam and am now an
+              <b>AWS Certified Cloud Practitioner</b>! This content was exactly
+              what the CCP exam covered.
+            </p>
+            <h2>Will A</h2>
+          </article>
+          <article class="testimony-card">
+            <img
+              src="https://s.udemycdn.com/browse_components/student-quote-unit/quote.svg"
+              alt=""
+            />
+            <p>
+              This course helped me
+              <b
+                >freshen up on my product manager skills and land a job at
+                Facebook!</b
+              >
+              Thanks guys :)
+            </p>
+            <h2>Ron F</h2>
+          </article>
+          <article class="testimony-card">
+            <img
+              src="https://s.udemycdn.com/browse_components/student-quote-unit/quote.svg"
+              alt=""
+            />
+            <p>
+              One of the best courses on management and leadership I have come
+              across so far. The advice is practical, and examples highly
+              relatable. <b>Would help anyone become a better manager.</b>
+            </p>
+            <h2>Philip W</h2>
+          </article>
         </div>
-        <article>
-          <h3>Python</h3>
-          <p>
-            Take one of DexaDemy's range of Python courses and learn how to code
-            using this incredibly useful language. Its simple syntax and
-            readability makes Python perfect for Flask, Django, data science,
-            and machine learning. You'll learn how to build everything from
-            games to sites to apps. Choose from a range of courses that will
-            appeal to both beginners and advanced developers alike.
-          </p>
-        </article>
-        <article>
-          <h3>Javascript</h3>
-          <p>
-            JavaScript is a text-based computer programming language used to
-            make dynamic web pages. A must-learn for aspiring web developers or
-            programmers, JavaScript can be used for features like image
-            carousels, displaying countdowns and timers, and playing media on a
-            webpage. With JavaScript online classes, you can learn to build
-            interactive web applications, choose the best framework, and work
-            with other programming languages like HTML and CSS.
-          </p>
-        </article>
-        <article>
-          <h3>Data Science</h3>
-          <p>
-            Data science application is an in-demand skill in many industries
-            worldwide — including finance, transportation, education,
-            manufacturing, human resources, and banking. Explore data science
-            courses with Python, statistics, machine learning, and more to grow
-            your knowledge. Get data science training if you're into research,
-            statistics, and analytics.
-          </p>
-        </article>
       </section>
-    </section>
-    <section>
-      <h2>How learners like you are achieving their goals</h2>
-      <article>
-        <p>
-          I am proud to say that after a few months of taking this course... I
-          passed my exam and am now an AWS Certified Cloud Practitioner! This
-          content was exactly what the CCP exam covered.
-        </p>
-        <h3>Will A</h3>
-      </article>
-      <article>
-        <p>
-          This course helped me freshen up on my product manager skills and land
-          a job at Facebook! Thanks guys :)
-        </p>
-        <h3>Ron F</h3>
-      </article>
-      <article>
-        <p>
-          One of the best courses on management and leadership I have come
-          across so far. The advice is practical, and examples highly relatable.
-          Would help anyone become a better manager.
-        </p>
-        <h3>Philip W</h3>
-      </article>
-    </section>
-    <section>
-      <h2>Learners are viewing</h2>
-      <section>
-        <article>
-          <img
-            src="https://img-b.udemycdn.com/course/240x135/1565838_e54e_18.jpg"
-            alt=""
-          />
-          <h3>The Complete 2024 Web Development Bootcamp</h3>
-          <p>Dr. Angela Yu</p>
-          <p><b>Rp 649,000</b></p>
-        </article>
-        <article>
-          <img
-            src="https://img-b.udemycdn.com/course/240x135/1565838_e54e_18.jpg"
-            alt=""
-          />
-          <h3>100 Days of Code: The Complete Python Pro Bootcamp</h3>
-          <p>Dr. Angela Yu</p>
-          <p><b>Rp 649,000</b></p>
-        </article>
-        <article>
-          <img
-            src="https://img-b.udemycdn.com/course/240x135/567828_67d0.jpg"
-            alt=""
-          />
-          <h3>The Complete Python Bootcamp From Zero to Hero in Python</h3>
-          <p>Jose Portilla</p>
-          <p><b>Rp 549,000</b></p>
-        </article>
-      </section>
-    </section>
-    <section>
-      <h2>Top Categories</h2>
-      <section>
-        <section>
-          <img
-            src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
-            alt=""
-          />
-          <h3>Design</h3>
-        </section>
-        <section>
-          <img
-            src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
-            alt=""
-          />
-          <h3>Development</h3>
+      <section class="popular">
+        <h1>Learners are viewing</h1>
+        <section class="accordion">
+          <article class="course-card">
+            <img
+              src="https://img-b.udemycdn.com/course/240x135/1565838_e54e_18.jpg"
+              alt=""
+            />
+            <h2>The Complete 2024 Web Development</h2>
+            <p>Dr. Angela Yu</p>
+            <p><b>Rp 649,000</b></p>
+          </article>
+          <article class="course-card">
+            <img
+              src="https://img-b.udemycdn.com/course/240x135/1565838_e54e_18.jpg"
+              alt=""
+            />
+            <h2>100 Days of Code: The Complete Python Pro</h2>
+            <p>Dr. Angela Yu</p>
+            <p><b>Rp 649,000</b></p>
+          </article>
+          <article class="course-card">
+            <img
+              src="https://img-b.udemycdn.com/course/240x135/567828_67d0.jpg"
+              alt=""
+            />
+            <h2>The Complete Python From Zero to Hero in Python</h2>
+            <p>Jose Portilla</p>
+            <p><b>Rp 549,000</b></p>
+          </article>
+          <article class="course-card">
+            <img
+              src="https://img-b.udemycdn.com/course/240x135/1565838_e54e_18.jpg"
+              alt=""
+            />
+            <h2>The Complete 2024 Web Development</h2>
+            <p>Dr. Angela Yu</p>
+            <p><b>Rp 649,000</b></p>
+          </article>
+          <article class="course-card">
+            <img
+              src="https://img-b.udemycdn.com/course/240x135/1565838_e54e_18.jpg"
+              alt=""
+            />
+            <h2>The Complete 2024 Web Development</h2>
+            <p>Dr. Angela Yu</p>
+            <p><b>Rp 649,000</b></p>
+          </article>
+          <article class="course-card">
+            <img
+              src="https://img-b.udemycdn.com/course/240x135/1565838_e54e_18.jpg"
+              alt=""
+            />
+            <h2>The Complete 2024 Web Development</h2>
+            <p>Dr. Angela Yu</p>
+            <p><b>Rp 649,000</b></p>
+          </article>
         </section>
       </section>
-    </section>
-    <section>
-      <h2>Become an instructor</h2>
-      <p>
-        Instructors from around the world teach millions of learners on DexaDemy.
-        We provide the tools and skills to teach what you love.
-      </p>
-      <button>Start teaching today</button>
-    </section>
+      <section class="top-categories">
+        <h1>Top Categories</h1>
+        <section class="accordion">
+          <div class="category-card">
+            <img
+              src="https://s.udemycdn.com/home/top-categories/lohp-category-design-v2.jpg"
+              alt=""
+            />
+            <h2>Design</h2>
+          </div>
+          <div class="category-card">
+            <img
+              src="https://s.udemycdn.com/home/top-categories/lohp-category-development-v2.jpg"
+              alt=""
+            />
+            <h2>Development</h2>
+          </div>
+        </section>
+      </section>
+      <section class="instructor">
+        <article>
+          <img
+            src="https://s.udemycdn.com/home/non-student-cta/instructor-1x-v3.jpg"
+            alt=""
+          />
+          <section>
+            <h1>Become an instructor</h1>
+            <p>
+              Instructors from around the world teach millions of learners on
+              DexaDemy. We provide the tools and skills to teach what you love.
+            </p>
+            <button class="button black-button">Start teaching today</button>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section>
+        <nav>
+          <a href="">Business</a>
+          <a href="">Teach</a>
+          <a href="">Careers</a>
+        </nav>
+        <div>
+          <select name="language" id="language" class="button black-button">
+            <option value="id">Indonesia</option>
+            <option value="en">English</option>
+            <option value="jp">日本語</option>
+          </select>
+        </div>
+      </section>
+      <section>
+        <a href="/">
+          <img src="assets/logo-white.png" alt="Company Logo" />
+        </a>
+        <small>2024 DexaDemy, Inc.</small>
+      </section>
+    </footer>
+    <script src="index.js"></script>
   </body>
-  <footer>
-    <section>
-      <a href="">DexaDemy Business</a>
-      <a href="">Teach on DexaDemy</a>
-      <a href="">Careers</a>
-      <a href="">Terms</a>
-      <a href="">Sitemap</a>
-    </section>
-    <select name="language" id="language">
-      <option value="id">Indonesia</option>
-      <option value="en">English</option>
-      <option value="jp">日本語</option>
-    </select>
-    <section>
-      <h1>DexaDemy</h1>
-      <small>2024 DexaDemy, Inc.</small>
-    </section>
-  </footer>
 </html>
