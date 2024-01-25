@@ -12,7 +12,7 @@ This is the first milestone project for "Web Development" module from RevoU. Thi
 
 ### Home page
 
-Open index.html on browser to access home page.
+Open index.html on browser to access home page or open https://alwandexa.github.io/revou-web-dev-milestone-project-1-alwan/.
 
 ### Login Page
 
