@@ -1,6 +1,5 @@
 html {
   height: 100%;
-  font-family: "Open Sans", sans-serif;
   background-color: #f4f4f4;
 }
 
@@ -22,12 +21,9 @@ header {
   background-color: #a82b23;
 }
 
-p {
-    font-size: small;
-}
-
-a {
-  color: white;
+form {
+  display: flex;
+  flex-direction: column;
 }
 
 form div {
@@ -40,14 +36,16 @@ h1 {
   margin: 0;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
+p {
+  font-size: small;
+}
+
+a {
+  color: white;
 }
 
 .input {
   padding: 1em;
-  /* width: 100%; */
 }
 
 .container {
@@ -67,13 +65,6 @@ form {
 
 .login-card img {
   width: 8em;
-}
-
-.button {
-  padding: 1em;
-  border: 0;
-  font-weight: bolder;
-  cursor: pointer;
 }
 
 .login-button {

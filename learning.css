@@ -1,6 +1,5 @@
 html {
   height: 100%;
-  font-family: "Open Sans", sans-serif;
   overflow: hidden;
 }
 
@@ -12,7 +11,6 @@ aside {
 body {
   display: flex;
   height: 100%;
-  margin: 0;
 }
 
 main {
@@ -42,13 +40,10 @@ input {
 .sidebar-head {
   background-color: #a82b23;
   padding: 1em;
-  /* height: 30%; */
 }
 
 .sidebar-body {
   padding: 1em;
-  /* height: min-content; */
-  /* overflow-y: scroll; */
 }
 
 .collapsible {
@@ -123,26 +118,6 @@ input {
 .back-wrapper a {
   color: white;
   font-style: italic;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 0.25em;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }
 
 @media only screen and (max-width: 800px) {
